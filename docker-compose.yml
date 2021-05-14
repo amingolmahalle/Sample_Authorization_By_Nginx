@@ -1,0 +1,30 @@
+version: "3.3"
+networks:
+        nginx-network:
+services:
+  auth:
+    networks:
+        - "nginx-network"
+    image: nginx_auth:1.1.0
+    container_name: nginx_auth
+    # ports:
+    #  - 7000:5000
+
+  hello:
+    networks: 
+        - "nginx-network"
+    image: nginx_hello:1.1.0
+    container_name: nginx_hello
+    # ports:
+    #  - 6000:5000
+
+  gw:
+    networks:
+        - "nginx-network"
+    image: "nginx"
+    container_name: nginx    
+    ports:
+     - 8080:80
+    volumes:
+     - ./nginx/www:/var/www
+     - ./nginx/conf.d/:/etc/nginx

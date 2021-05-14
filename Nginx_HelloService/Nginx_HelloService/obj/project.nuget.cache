@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "75EzhUOhLdSAmXamAHWHRYZolEL+J44CrihcCyvb3/0vdFQUykEuzEsuvTgZjI1E+rZiDzRpxVtJD9zY/xd6OA==",
+  "success": true,
+  "projectFilePath": "/home/amin/Projects/Other/Nginx_Authorization_Sample/Nginx_HelloService/Nginx_HelloService/Nginx_HelloService.csproj",
+  "expectedPackageFiles": [
+    "/home/amin/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.14/microsoft.netcore.app.host.linux-x64.3.1.14.nupkg.sha512"
+  ],
+  "logs": []
+}
